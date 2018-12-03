@@ -1041,7 +1041,6 @@ func main() {
 		for _, change := range changes {
 			value, _ := strconv.Atoi(change)
 			frequency += value
-			fmt.Println("Frequency:", frequency)
 			for _, refFrequency := range frequencies {
 				if refFrequency == frequency {
 					fmt.Println("Duplicate found! Final frequency is", frequency)
@@ -1056,7 +1055,6 @@ func main() {
 				break
 			}
 			frequencies = append(frequencies, frequency)
-			fmt.Println("Recorded", len(frequencies), "frequencies so far...")
 		}
 	}
 }
